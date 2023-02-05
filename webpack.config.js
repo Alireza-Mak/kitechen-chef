@@ -8,11 +8,11 @@ const HtmlWebpackPlugins = require('html-webpack-plugin');
 module.exports = {
   entry: ['@babel/polyfill', './src/js/index.js'], // The root of the JS file in the source folder + polyfill to convert ES5 codes to ES6 codes
   output: {
-    path: path.resolve(__dirname, 'dist'), //The JS file's root in the dist folder
+    path: path.resolve(__dirname, './'), //The JS file's root in the dist folder
     filename: 'js/bundle.js', //The name of JS file in the dist folder
   },
   devServer: {
-    static: './dist', //The dist folder's root to show the live website
+    static: './', //The dist folder's root to show the live website
   },
 
   plugins: [
